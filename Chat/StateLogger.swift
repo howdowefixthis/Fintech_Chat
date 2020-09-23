@@ -8,10 +8,10 @@
 
 import UIKit
 
-class CommonElements {
+class StateLogger {
 
     static func printState(previousState: String, currentState: String, functionName: String) {
-        #if DEBUG
+        #if APPSTATE
         print("Application moved from \(previousState) to \(currentState): \(functionName)")
         #endif
     }
