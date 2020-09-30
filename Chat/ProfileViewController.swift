@@ -33,6 +33,7 @@ class ProfileViewController: BaseViewController {
         
         print(saveButton.frame)
         //frame с размерами iPhoneSE(2nd generation)в .storyboard
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -63,6 +64,10 @@ class ProfileViewController: BaseViewController {
         }
         
         present(imagePicker, animated: true, completion: nil)
+    }
+    
+    @IBAction func profileBarButtonAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func showActionSheetAlert(_ sender: Any) {
